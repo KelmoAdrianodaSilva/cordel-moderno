@@ -1,85 +1,69 @@
 @charset "UTF8";
 @font-face {
-    font-family:'Sriracha' ;
-    src: url(../fontes/Sriracha/Sriracha-Regular.ttf) format(truetype);
+    font-family: 'passion one';
+    src: url(../fontes/Passion-One/PassionOne-Regular.ttf) format(truetype);
 }
 @font-face {
-    font-family: 'Passion One';
-    src: url(../fontes/Passion-One/PassionOne-Bold.ttf) format(truetype);
+    font-family: 'Sriracha';
+    src: url(../fontes/Sriracha/Sriracha-Regular.ttf);
 }
 *{
     margin: 0px;
     padding: 0px;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 header{
     background-color: black;
     color: white;
     text-align: center;
-    height: 200px;
-    background-color: 100% 100%;
-    position: relative;
-}
-#cabeçalho{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    padding: 50px 0px;
 }
 header h1{
-    font-family: 'passion One';
-    font-size: 3.1em;
+    font-size: 9vw; /*O size definido permite q o conteúdo adapte-se*/
+    font-family: 'passion one';
+    font-variant: small-caps;/*Todo o título fica maiúsculo porém as primeiras letras ficam maiores*/
 }
 header p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
 }
-header a{
-    text-decoration: none;
+a{
     color: white;
-    font-weight: 600;
+    font-weight: bold;
 }
-header a:hover{
-    text-decoration: underline;
-    color: rgb(99, 99, 99);
+a:hover{
+    color: darkgray;
 }
-main{
+section{
+    padding: 10vh 0px 10vh 30px;
     font-family: 'Sriracha';
-    margin: 70px 0px 50px 0px;
+    font-size: 1.6em;
 }
-div{
-   display: block;
-   margin:0px 0px 70px 25px;
+section p{
+padding-bottom: 40px;
 }
-div p{
-    font-size: 1.5em;
-}
-#joana{
-    display: block;
-    margin-bottom: 70px;
-    height: 500px;
-    background: url(../imagens/background001.jpg) center no-repeat fixed;
+#imagem1{
+    background: url(../imagens/background001.jpg) right top fixed;
     background-size: cover;
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.497);
+    box-shadow: inset 7px 7px 7px rgba(0, 0, 0, 0.502);
 }
-article p {
-    font-size: 1.5em;
-}
-#livro{
-    display: block;
-    margin-bottom:70px;
-    height:500px;
-    background: url(../imagens/background002.jpg) center no-repeat fixed;
+#imagem2{
+    background: url(../imagens/background002.jpg)  center fixed;
     background-size: cover;
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.465);
+    box-shadow: inset  5px 5px 7px rgba(0, 0, 0, 0.272);
 }
-.conteudo{
-    margin-left: 35px;
-    background-color: rgba(0, 0, 0, 0.303);
-    width: 300px;
+.imagem > p{
+    display: inline-block;
     color: white;
+    background-color: rgba(0, 0, 0, 0.392);
+    padding: 6px;
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.601);
 }
 footer{
-    color:white;
     background-color: black;
+    color: white;
+    padding: 5px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
 }
